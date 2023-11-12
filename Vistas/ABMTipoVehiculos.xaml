@@ -1,0 +1,39 @@
+﻿<Window x:Class="Vistas.ABMTipoVehiculos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:svc="clr-namespace:ClasesBase;assembly=ClasesBase"
+        Title="ABMTipoVehiculos" Height="300" Width="542">
+    <Window.Resources>
+        <ObjectDataProvider
+            ObjectType="{x:Type svc:TrabajarVehiculo}"
+            MethodName="traerTipoVehiculos"
+            x:Key="list_vehiculo"
+            />
+    </Window.Resources>
+        <Grid Width="515">
+        <Button Content="Guardar" Height="23" HorizontalAlignment="Left" Margin="12,222,0,0" Name="btnaceptar" VerticalAlignment="Top" Width="75" Click="btnaceptar_Click" Template="{StaticResource buttonvehiculo}" />
+        <Label Content="Codigo" Height="28" HorizontalAlignment="Left" Margin="12,66,0,0" Name="codigo" VerticalAlignment="Top" />
+        <Label Content="Descripcion" Height="28" HorizontalAlignment="Left" Margin="12,119,0,0" Name="descripcion" VerticalAlignment="Top" />
+        <Label Content="Tarifa" Height="28" HorizontalAlignment="Left" Margin="12,169,0,0" Name="tarifa" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="84,72,0,0" Name="textcodigo" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="84,119,0,0" Name="textdescripcion" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="84,169,0,0" Name="texttarifa" VerticalAlignment="Top" Width="120" />
+        <Button Content="Modificar" Height="23" HorizontalAlignment="Left" Margin="93,223,0,0" Name="btnmodificar" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonvehiculo}" />
+        <Button Content="Eliminar" Height="23" HorizontalAlignment="Left" Margin="174,222,0,0" Name="btneliminar" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonvehiculo}" />
+        <Label Content="Vehiculo" Height="35" HorizontalAlignment="Left" Margin="192,12,0,0" Name="vehiculo" VerticalAlignment="Top" FontSize="20" Width="86" />
+        <Button Content="Playa de Estacionamiento" Height="30" HorizontalAlignment="Left" Margin="301,219,0,0" Name="btnplaya" VerticalAlignment="Top" Width="202" Click="btnplaya_Click" Template="{StaticResource buttonvehiculo}" />
+
+
+        <ListView Name="vehiculos" Height="142" Margin="210,55,12,64"
+                      ItemsSource="{Binding Source={StaticResource list_vehiculo}}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="70" Header="Codigo" DisplayMemberBinding="{Binding Path=TVCodigo}"/>
+                    <GridViewColumn Width="147" Header="Descripcion" DisplayMemberBinding="{Binding Path=Descripcion}"/>
+                    <GridViewColumn Width="70" Header="Tarifa" DisplayMemberBinding="{Binding Path=Tarifa}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>

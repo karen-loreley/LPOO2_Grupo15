@@ -1,0 +1,10 @@
+C:\Users\LENOVO\documents\visual studio 2010\Projects\LPOO2_Grupo15\LibreriaRecursos\bin\Debug\LibreriaRecursos.dll
+C:\Users\LENOVO\documents\visual studio 2010\Projects\LPOO2_Grupo15\LibreriaRecursos\bin\Debug\LibreriaRecursos.pdb
+C:\Users\LENOVO\documents\visual studio 2010\Projects\LPOO2_Grupo15\LibreriaRecursos\obj\Debug\LibreriaRecursos.g.resources
+C:\Users\LENOVO\documents\visual studio 2010\Projects\LPOO2_Grupo15\LibreriaRecursos\obj\Debug\LibreriaRecursos.Properties.Resources.resources
+C:\Users\LENOVO\documents\visual studio 2010\Projects\LPOO2_Grupo15\LibreriaRecursos\obj\Debug\LibreriaRecursos.csproj.GenerateResource.Cache
+C:\Users\LENOVO\documents\visual studio 2010\Projects\LPOO2_Grupo15\LibreriaRecursos\obj\Debug\LibreriaRecursos.dll
+C:\Users\LENOVO\documents\visual studio 2010\Projects\LPOO2_Grupo15\LibreriaRecursos\obj\Debug\LibreriaRecursos.pdb
+C:\Users\LENOVO\documents\visual studio 2010\Projects\LPOO2_Grupo15\LibreriaRecursos\bin\Debug\ClasesBase.dll
+C:\Users\LENOVO\documents\visual studio 2010\Projects\LPOO2_Grupo15\LibreriaRecursos\bin\Debug\ClasesBase.pdb
+C:\Users\LENOVO\documents\visual studio 2010\Projects\LPOO2_Grupo15\LibreriaRecursos\obj\Debug\LibreriaRecursos.csprojResolveAssemblyReference.cache

@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ControlTemplate x:Key="buttonvehiculo" TargetType="Button">
+        <Grid>
+            <Border Background="Cyan"/>
+            <TextBlock Name="BotonTexto" Text="{TemplateBinding Content}" FontWeight="Normal" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="BotonTexto" Property="Foreground" Value="Black" />
+                <Setter TargetName="BotonTexto" Property="FontSize" Value="16" />
+                <Setter Property="FontWeight" Value="Normal" />
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="False">
+                <Setter TargetName="BotonTexto" Property="Foreground" Value="Red" />
+                <Setter TargetName="BotonTexto" Property="FontSize" Value="12" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+</ResourceDictionary>

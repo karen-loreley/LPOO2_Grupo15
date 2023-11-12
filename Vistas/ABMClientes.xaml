@@ -1,0 +1,19 @@
+﻿<Window x:Class="Vistas.ABMClientes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ABMClientes" Height="300" Width="400">
+    <Grid>
+        <Label Content="DNI" Height="28" HorizontalAlignment="Left" Margin="26,49,0,0" Name="dni" VerticalAlignment="Top" />
+        <Label Content="Apellido" Height="28" HorizontalAlignment="Left" Margin="26,94,0,0" Name="ape" VerticalAlignment="Top" />
+        <Label Content="Nombre" Height="28" HorizontalAlignment="Left" Margin="26,137,0,0" Name="nom" VerticalAlignment="Top" />
+        <Label Content="Telefono" Height="28" HorizontalAlignment="Left" Margin="26,190,0,0" Name="tel" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="104,53,0,0" Name="textdni" VerticalAlignment="Top" Width="120" Style="{StaticResource mitextboxcliente}" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="104,98,0,0" Name="textape" VerticalAlignment="Top" Width="120" Style="{StaticResource mitextboxcliente}" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="104,141,0,0" Name="textnom" VerticalAlignment="Top" Width="120" Style="{StaticResource mitextboxcliente}" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="104,194,0,0" Name="texttel" VerticalAlignment="Top" Width="120" Style="{StaticResource mitextboxcliente}" />
+        <Button Content="Guardar" Height="40" HorizontalAlignment="Left" Margin="257,53,0,0" Name="btnaceptar" VerticalAlignment="Top" Width="101" Click="btnaceptar_Click" Style="{StaticResource mibutoncliente}" />
+        <Button Content="Modificar" Height="38" HorizontalAlignment="Left" Margin="257,116,0,0" Name="btnmodificar" VerticalAlignment="Top" Width="101" Style="{StaticResource mibutoncliente}" />
+        <Button Content="Eliminar" Height="34" HorizontalAlignment="Left" Margin="257,179,0,0" Name="btneliminar" VerticalAlignment="Top" Width="101" Style="{StaticResource mibutoncliente}" />
+        <Label Content="Cliente" Height="42" HorizontalAlignment="Left" Margin="164,0,0,0" Name="cliente" VerticalAlignment="Top" FontSize="20" Width="76" />
+    </Grid>
+</Window>
